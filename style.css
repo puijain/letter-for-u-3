@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(
+        to bottom,
+        #fdfaf6,
+        #f6efe7
+    );
+
+    font-family:Georgia, serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:40px;
+
+    color:#5e412f;
+}
+
+.letter{
+
+    background:#ffffff;
+
+    max-width:750px;
+    width:100%;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+
+    position:relative;
+}
+
+.letter::before{
+
+    content:"☁️";
+
+    position:absolute;
+
+    top:-20px;
+    left:-20px;
+
+    font-size:2rem;
+}
+
+.letter::after{
+
+    content:"⭐";
+
+    position:absolute;
+
+    bottom:-20px;
+    right:-20px;
+
+    font-size:1.8rem;
+}
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#7f5539;
+
+    font-size:2.2rem;
+}
+
+p{
+
+    margin-bottom:18px;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+}
+
+ol{
+
+    padding-left:28px;
+
+    margin-top:15px;
+}
+
+li{
+
+    margin-bottom:25px;
+
+    line-height:1.9;
+}
+
+li:hover{
+
+    transform:translateX(4px);
+
+    transition:0.2s;
+}
+
+@media(max-width:768px){
+
+    .letter{
+
+        padding:30px;
+    }
+
+    h1{
+
+        font-size:1.8rem;
+    }
+
+}
+hr{
+
+    border:none;
+
+    border-top:2px dashed #d8c2a8;
+
+    margin:40px 0;
+}
+
+.bored-section{
+
+    text-align:center;
+}
+
+.bored-section h2{
+
+    margin-bottom:10px;
+
+    color:#7f5539;
+}
+
+.bored-section p{
+
+    margin-bottom:20px;
+}
+
+#boredBtn{
+
+    background:#7f5539;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:0.2s;
+}
+
+#boredBtn:hover{
+
+    transform:translateY(-3px);
+}
+
+#messageBox{
+
+    margin-top:25px;
+
+    background:#fdf7f1;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    min-height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.1rem;
+}
